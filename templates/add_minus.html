@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <form method="post" action="{{ url_for('signup') }}">
+        <p><label>Username:</label> <input type="text" name="username" required></p>
+        <p><label>Message:</label> <textarea name="message"></textarea></p>
+        <p><button type="submit">Zoom In</button></p>
+        <p><button type="submit">Zoom Out</button></p>
+    </form>
+{% endblock %}
